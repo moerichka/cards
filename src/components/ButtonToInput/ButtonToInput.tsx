@@ -10,7 +10,7 @@ import s from "./ButtonToInput.module.scss";
 const regexp =
   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAICHIMP_URL || "";
+const MAILCHIMP_URL = process.env.REACT_APP_MAICHIMP_URL || "";
 
 function ButtonToInput() {
   const navigate = useNavigate();
