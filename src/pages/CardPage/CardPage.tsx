@@ -121,9 +121,11 @@ function CardPage() {
             <ButtonRoute to="/cards" className={s.button} variant="blue">
               Back
             </ButtonRoute>
-            <ButtonLink href="/" className={s.button}>
-              Join
-            </ButtonLink>
+            {cardId !== "0" && (
+              <ButtonLink href="/" className={s.button}>
+                Join
+              </ButtonLink>
+            )}
           </div>
         </div>
       </div>
